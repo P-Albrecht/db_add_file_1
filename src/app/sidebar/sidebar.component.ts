@@ -18,6 +18,8 @@ export class SidebarComponent {
   @Output() sidebarToggle = new EventEmitter<void>();
 
   routeList:string[][] = [
+    [ 'TreeViewComponent'
+    ],
   ]
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
