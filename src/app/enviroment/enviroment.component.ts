@@ -43,5 +43,11 @@ export class EnviromentComponent {
       height: `${event.rectangle.height}px`,
     };
   }
+
+  treeInputValue = [{'name':'AAA', 'children':[]}, {'name':'BBB', 'children':[]}, {'name':'CCC', 'children':[{'name':'DDD', 'children':[]}]}];
+
+  nodeSelectEventOutputEvent(response: any) {
+    console.log(response)
+  }
 }
 
