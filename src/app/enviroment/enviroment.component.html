@@ -31,6 +31,10 @@
       
       ></div>
       <div class="enviroment-container">
+        <app-tree-view *ngIf="this.component === 'TreeViewComponent'"
+            [tree]=this.treeInputValue
+            (nodeSelectEvent)="nodeSelectEventOutputEvent($event)"
+        ></app-tree-view>
       </div>
     </div>
   </div>
